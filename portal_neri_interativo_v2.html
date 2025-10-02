@@ -49,6 +49,53 @@
     /* Fundo partículas */
     #particles-js{position:fixed; top:0; left:0; width:100%; height:100%; z-index:1; pointer-events:none;}
     @media (max-width:980px){.hero{grid-template-columns:1fr; text-align:center} .grid-3{grid-template-columns:1fr}}
+    /* RESPONSIVIDADE MOBILE EXTRA */
+@media (max-width: 768px) {
+  .menu {
+    display: none; /* Oculta menu no mobile */
+  }
+
+  header {
+    padding: 10px 0;
+  }
+
+  .hero {
+    grid-template-columns: 1fr; 
+    text-align: center;
+    padding: 60px 20px 30px;
+  }
+
+  .hero img {
+    max-width: 90%;
+    margin: 20px auto 0;
+    display: block;
+  }
+
+  .section {
+    padding: 40px 20px;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -87,7 +134,7 @@
     <section id="sobre" class="section reveal">
       <h2>Quem somos</h2>
       <p>A <b>Neri AI Solutions</b> é uma empresa de inovação em tecnologia que conecta inteligência artificial, nuvem e dados para entregar eficiência e crescimento aos nossos clientes. Nosso compromisso é acelerar seu futuro com soluções digitais de ponta.</p>
-      <p>Empresa criada pelo <b>Desenvolvedor e CEO Weslley Neri</b> no ano de 2025, somos focados em agilizar e automatizar empresas, promovendo <b>modernização</b> e <b>migração de tecnologia</b> para um mundo digital mais rápido e inteligente.</p>
+      <p>Empresa criada pelo <b>Desenvolvedor Weslley Neri</b> no ano de 2025, somos focados em agilizar e automatizar empresas, promovendo <b>modernização</b> e <b>migração de tecnologia</b> para um mundo digital mais rápido e inteligente.</p>
     </section>
 
     <!-- SERVIÇOS -->
