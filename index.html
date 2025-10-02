@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Neri AI Solutions — Splash</title>
+  <link rel="icon" href="./logo-neri.png" type="image/png">
+  <style>
+    :root{ --bg:#0b1020; --text:#e5e7eb; }
+    body{ margin:0; font-family:system-ui, -apple-system, Segoe UI, Inter, Roboto; background:var(--bg); color:var(--text); }
+    .splash{position:fixed; inset:0; z-index:9999; display:flex; align-items:center; justify-content:center; overflow:hidden}
+    .splash .splash-backdrop{position:absolute; inset:0; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); background: rgba(8,12,26,0.55)}
+    .splash .splash-link{position:relative; z-index:2; display:block; max-width:min(1080px,92vw); border-radius:22px; overflow:hidden; box-shadow:0 24px 80px rgba(0,0,0,.45), 0 0 0 1px rgba(148,163,184,.2) inset}
+    .splash img{display:block; width:100%; height:auto}
+  </style>
+</head>
+<body>
+  <div id="splash" class="splash" aria-hidden="false">
+    <a href="portal_neri_interativo_v2.html" class="splash-link" aria-label="Ir para a página principal">
+      <img src="./hero-neri.png" alt="Neri AI Solutions — apresentação" />
+    </a>
+    <div class="splash-backdrop"></div>
+  </div>
+  <main style="padding:40px; max-width:960px; margin:0 auto">
+    <h1>Home (exemplo)</h1>
+    <p>Conteúdo de exemplo. O overlay de splash está por cima ao entrar.</p>
+  </main>
+</body>
+</html>
